@@ -1,30 +1,11 @@
-<script>
-	export let name;
-</script>
-
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+<div class="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+  <div class="flex-shrink-0">
+    <img class="h-12 w-12" src="/images/logo.svg" alt="ChitChat Logo" />
+  </div>
+  <div class="ml-6 pt-1">
+    <h4 class="text-xl text-gray-900 leading-tight">ChitChat</h4>
+    <p class="text-base text-gray-600 leading-normal">
+      You have a new message!
+    </p>
+  </div>
+</div>
